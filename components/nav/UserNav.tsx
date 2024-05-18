@@ -19,6 +19,7 @@ interface iAppProps {
   email: string;
   name: string;
   userImage: string | undefined;
+  // user: User;
 }
 
 export async function UserNav({ email, name, userImage }: iAppProps) {
