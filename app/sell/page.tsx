@@ -1,15 +1,18 @@
 import { SelectCategory } from '@/components/SelectCategory';
+import { Button } from '@/components/ui/button';
 
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { UploadDropzone } from '@/lib/uploadthing';
 
 function SellRoute() {
   return (
@@ -38,8 +41,18 @@ function SellRoute() {
             <div className="flex flex-col gap-y-2">
               <Label> Small Summary</Label>
               <Textarea placeholder=" Please decribe your product shortly right here" />
+
+              {/* here i have to add textediter  */}
+              
             </div>
+            <div className="flex flex-col gap-y-2">
+              <Label >Produact image</Label>
+              <UploadDropzone endpoint='imageUploader'/>
+            </div> 
           </CardContent>
+          <CardFooter className='mt-5'>
+            <Button>Submit form</Button>
+          </CardFooter>
         </form>
       </Card>
     </section>
