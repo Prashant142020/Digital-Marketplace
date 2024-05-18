@@ -12,6 +12,25 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+```
+
+```bash
+
+git reset HEAD~1    
+
+git push -f origin dev
+
+
+```
+
+```bash
+
+pnpx prisma studio
+# or
+pnpx prisma db push
+
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
